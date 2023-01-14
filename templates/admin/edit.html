@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckbox.io/CKBox/1.2.1/ckbox.js"></script>    
+    <title>Edit Post</title>
+</head>
+<body>
+    <h1>Editing Post: </h1>
+    <hr>
+    <h2>Edit:</h2>
+    <form action="/posts/edit/{{post[0]}}" method="POST">
+        <label for="content">Title:</label>
+        <input class="form-control" type="text" name="title" id="title" value="{{post[1]}}">
+        <br>
+        <label for="content">Author:</label>
+        <input class="form-control" type="text" name="author" id="author" value="{{post[3]}}">
+        <br>
+        <label for="post">Post:</label>
+        <textarea name="editor" name="editor" id="editor">
+            {{post[2]}}
+        </textarea>          
+        <br>
+        <input type="submit" value="Save">
+    </form>
+    <hr>
+</body>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ), {
+            ckbox: {
+                tokenUrl: 'https://92796.cke-cs.com/token/dev/d8b4ydc18y8tJOjqri6fggEeckenpls8b0mr?limit=10',
+            },
+            toolbar: [
+                'ckbox', 'imageUpload', '|', 'heading', '|', 'undo', 'redo', '|', 'bold', 'italic', '|',
+                'blockQuote', 'indent', 'link', '|', 'bulletedList', 'numberedList'
+            ],
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>    
+</html>

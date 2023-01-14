@@ -16,7 +16,7 @@ html:not(:hover), body:not(:hover){
   body::before {
   content: "";
   position: fixed;	  
-  background: #040404 url("/assets/img/bgnew.jpg") top right no-repeat;
+  background: #040404 url("/static/img/bgnew.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -29,7 +29,7 @@ html:not(:hover), body:not(:hover){
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("/assets/img/bgnew.jpg") top right no-repeat;
+  background: #040404 url("/static/img/bgnew.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -49,7 +49,7 @@ body::before {
         
   content: "";
   position: fixed;	  
-  background: #040404 url("/assets/img/dopemobilenew.jpg") top right no-repeat;
+  background: #040404 url("/static/img/dopemobilenew.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;

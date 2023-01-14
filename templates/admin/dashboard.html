@@ -1,0 +1,28 @@
+<h1> Heee </h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+        <script src="https://cdn.ckbox.io/CKBox/1.2.1/ckbox.js"></script>
+    </head>
+    <body>
+        <div id="editor" name="Jemoeder"></div>
+    </body>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ), {
+                ckbox: {
+                    tokenUrl: 'https://92796.cke-cs.com/token/dev/d8b4ydc18y8tJOjqri6fggEeckenpls8b0mr?limit=10',
+                },
+                toolbar: [
+                    'ckbox', 'imageUpload', '|', 'heading', '|', 'undo', 'redo', '|', 'bold', 'italic', '|',
+                    'blockQuote', 'indent', 'link', '|', 'bulletedList', 'numberedList'
+                ],
+            } )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>    
+</html>
