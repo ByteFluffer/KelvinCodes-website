@@ -1,3 +1,5 @@
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -8,28 +10,11 @@ body {
   position: relative;
   background: transparent;
 }
-html:not(:hover), body:not(:hover){
-    background-color:#000000;
-}
-
-@media (min-width: 769px) {
-  body::before {
-  content: "";
-  position: fixed;	  
-  background: #040404 url("/assets/img/bgnew.jpg") top right no-repeat;
-  background-size: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  z-index: -1;	  
-  }
-}
 
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("/assets/img/bgnew.jpg") top right no-repeat;
+  background: #040404 url("../img/bgnew.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -41,22 +26,6 @@ body::before {
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
-  }
-}
-
-@media (max-width: 769px) {
-    body::before{
-        
-  content: "";
-  position: fixed;	  
-  background: #040404 url("/assets/img/dopemobilenew.jpg") top right no-repeat;
-  background-size: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  z-index: -1;
-}
   }
 }
 
@@ -782,7 +751,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon::before {
-  background: #9F0707;
+  background: ##9F0707;
 }
 
 .services .icon-box:hover h4 a,
@@ -923,7 +892,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #9F0707;
+  color: #63eda3;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1024,7 +993,6 @@ section .container {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-padding-top: 70px;
   color: #444444;
   padding: 20px;
   width: 100%;
@@ -1081,7 +1049,7 @@ padding-top: 70px;
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #9F0707;
+  background: #ed3c0d;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1166,7 +1134,7 @@ padding-top: 70px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #9F0707;
+  background: #15bb62;
 }
 
 @-webkit-keyframes animate-loading {
