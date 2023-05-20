@@ -1216,3 +1216,62 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+
+
+
+/* 
+Mine CSS
+*/
+
+
+.article-content {
+  text-align: center;
+}
+
+.article-content-collum {
+padding-top: 30px;
+}
+
+
+
+.card-articles {
+  background: rgba(255, 255, 255, 0.08);
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.btn-articles {
+  color: white;
+  background-color: #9F0707;
+}
+
+
+
+.pagination-articles {
+  padding-top: 30px;
+}
+
+.page-item{ 
+  background-color: #9F0707;
+
+}
+
+.example .pagination>li>a,
+.example .pagination>li>span {
+  border: 1px solid purple;
+  color: #040404;
+}
+.pagination>li.active>a {
+  background: purple;
+  color: #b81010;
+}
+
+
+.devider-above-title {
+  color: #9F0707;
+}
+
+/* 
+End my CSS 
+*

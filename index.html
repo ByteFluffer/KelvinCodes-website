@@ -24,15 +24,17 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+  <!-- Remove class + header-top -->
   <!-- ======= Header ======= -->
-  <header id="header">
+  <header id="header" class="header-top">
     <div class="container">
 
       <h1><a href="index.html">Kelvin de Reus</a></h1>
@@ -45,6 +47,8 @@
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" target="_blank" href="https://status.kelvincodes.nl/status/main">Network-status <i style="font-size:15px; float: left; margin-right:.25em;" class="fa external-icon">&#xf08e;</i>
+          </a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -60,6 +64,132 @@
     </div>
   </header><!-- End Header -->
 
+
+
+  <!-- ======= Article list Section ======= -->
+  <section id="article-list " class="article-list">
+
+    <div class="article container article-container">
+
+      <div class="section-title">
+        <h2>Articles</h2>
+        <p>All my articles</p>
+      </div>
+
+      <div class="row article-content justify-content-center"  data-aos="fade-right">
+        
+          <div class="col-sm article-content">
+          <!-- Example cards, x 5 -->
+              <div class="card text-center card-articles" style="width: 40rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Special title treatment</h5>
+                  <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-articles">Go to article</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-sm article-content-collum">
+
+            <div class="card text-center card-articles" style="width: 40rem;">
+              <div class="card-body">
+                <h5 class="card-title text-white">Special title treatment</h5>
+                <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-articles">Go to article</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm article-content-collum">
+
+            <div class="card text-center card-articles" style="width: 40rem;">
+              <div class="card-body">
+                <h5 class="card-title text-white">Special title treatment</h5>
+                <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-articles">Go to article</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm article-content-collum">
+
+            <div class="card text-center card-articles" style="width: 40rem;">
+              <div class="card-body">
+                <h5 class="card-title text-white">Special title treatment</h5>
+                <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-articles">Go to article</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm article-content-collum">
+
+            <div class="card text-center card-articles" style="width: 40rem;">
+              <div class="card-body">
+                <h5 class="card-title text-white">Special title treatment</h5>
+                <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-articles">Go to article</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+    <div class="pagination-articles">
+      <nav aria-label="...">
+        <ul class="pagination pagination-md justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">1</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    </div>
+  </section>
+    <!-- End Article list -->
+
+
+
+
+  <!-- ======= Article page Section ======= -->
+  <section id="article-page" class="article-page section-show">
+
+    <div class="article container article-container">
+
+      <div class="section-title">
+        <h2>Article</h2>
+        <p>Article</p>
+      </div>
+
+      <hr class="devider-above-title">
+      <h1 class="text-article-title" id="article-text-title"></h1>
+      <br>
+      <p id="article-text-content"></p>
+    </div>
+  </section>
+    <!-- End Article page  -->
+
+
+
+  <script>
+  
+    // title
+    document.getElementById("article-text-title").innerHTML = "This is a title from JS";
+
+    // Content
+    document.getElementById("article-text-content").innerHTML = "This is content from \n JS!"
+    
+  </script>
+
+
+
+
+
+
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
 
@@ -73,7 +203,7 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="/assets/img/me_edited.png" class="img-fluid" alt="">
+          <img src="/assets/img/ik-cut.png" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Developer in training </h3>
@@ -373,6 +503,103 @@
 
  
 
+  <!-- ======= blogpage Section ======= -->
+  <section id="blog" class="blog">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item pb-0">
+            <h4>Kelvin de Reus</h4>
+            <p><em>I'm a tech-geek with a love for web hosting, programming, hardware, software and building awesome projects!</em></p>
+			  
+            <p>
+            <ul>
+
+              <li>Enschede, Netherlands</li>
+              <li>www.kelvincodes.nl</li>
+              <li>prive@kelvincodes.nl</li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Python developer</h4>
+            <h5>10-2022 - 4-2023</h5>
+            <p><em>In training by Getcertified.nl</em></p>
+            <p>Still in progress</p>
+          </div>
+          <div class="resume-item">
+            <h4>Twickel college</h4>
+            <h5>2014 - 2018</h5>
+            <p><em>Class 1/4</em></p>
+            <p>Not finished</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Air duct fitter</h4>
+            <h5>01-2019 - 11-2021</h5>
+            <p><em>Integralis, Netherlands</em></p>
+            <p>
+            <ul>
+              <li>Air duct fitter in hospitals, industrial building and homes</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>IT employee</h4>
+            <h5>11-2021 - 12-2021</h5>
+            <p><em>Centralpoint, Netherlands</em></p>
+            <p>
+            <ul>
+              <li>IT migration, delivering laptops to employees</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Helpdesk employee</h4>
+            <h5>02-2022 - 06-2022</h5>
+            <p><em>Teleperformance, Netherlands</em></p>
+            <p>
+            <ul>
+				<li>First line helpdesk</li>
+              <li>Giving tech support to employees</li>
+              <li>Making manuals for other helpdesk employees</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Developer &amp; technical maintainer</h4>
+            <h5>11-2022 - Present</h5>
+            <p><em>Handbuildcomputers, Netherlands</em></p>
+            <p>
+            <ul>
+              <li>Front &amp; backend development</li>
+              <li>Technical maintainer webstore</li>
+            </ul>
+            </p>
+          </div>	
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End blogpage section -->
+
+
+
+
+
+
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container">
@@ -554,5 +781,3 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
-</html>
